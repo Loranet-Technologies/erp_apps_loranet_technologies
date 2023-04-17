@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include loranet_technologies *.css
+recursive-include loranet_technologies *.csv
+recursive-include loranet_technologies *.html
+recursive-include loranet_technologies *.ico
+recursive-include loranet_technologies *.js
+recursive-include loranet_technologies *.json
+recursive-include loranet_technologies *.md
+recursive-include loranet_technologies *.png
+recursive-include loranet_technologies *.py
+recursive-include loranet_technologies *.svg
+recursive-include loranet_technologies *.txt
+recursive-exclude loranet_technologies *.pyc
