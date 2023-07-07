@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MAINT-.MM.-.YYYY.-.######",
+ "creation": "2023-06-19 12:08:44.114829",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_type",
+  "device_id",
+  "faults",
+  "description_or_action_taken",
+  "report_by",
+  "attachment",
+  "status",
+  "status_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "faults",
+   "fieldtype": "Data",
+   "label": "Faults"
+  },
+  {
+   "fieldname": "description_or_action_taken",
+   "fieldtype": "Data",
+   "label": "Description or Action Taken"
+  },
+  {
+   "fieldname": "report_by",
+   "fieldtype": "Link",
+   "label": "Report by",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach Image",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nNeed Action\nSolved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status_details",
+   "fieldtype": "Small Text",
+   "label": "Status Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-19 12:34:29.858485",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Maintenance Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Cyan",
+   "title": "Pending"
+  },
+  {
+   "color": "Red",
+   "title": "Need Action"
+  },
+  {
+   "color": "Green",
+   "title": "Solved"
+  }
+ ],
+ "track_changes": 1
+}

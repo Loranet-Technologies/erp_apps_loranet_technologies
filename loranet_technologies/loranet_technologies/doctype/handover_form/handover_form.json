@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-27 10:58:29.957074",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "handover_form",
+  "handover_to",
+  "reason_to_take_over",
+  "date_of_resignation",
+  "tab_break_dx3t1",
+  "task_or_project_to_handover_table",
+  "tab_break_qn3hg"
+ ],
+ "fields": [
+  {
+   "fieldname": "handover_form",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "HANDOVER FORM ",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "handover_to",
+   "fieldtype": "Link",
+   "label": "HANDOVER TO",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reason_to_take_over",
+   "fieldtype": "Select",
+   "label": "Reason to take over",
+   "options": "Resign\nChange Project"
+  },
+  {
+   "fieldname": "date_of_resignation",
+   "fieldtype": "Date",
+   "label": "Date of Resignation"
+  },
+  {
+   "fieldname": "tab_break_dx3t1",
+   "fieldtype": "Tab Break",
+   "label": "Task/Project to Handover"
+  },
+  {
+   "fieldname": "task_or_project_to_handover_table",
+   "fieldtype": "Table",
+   "label": "Task or Project to Handover Table",
+   "options": "Task or Project to Handover Table"
+  },
+  {
+   "fieldname": "tab_break_qn3hg",
+   "fieldtype": "Tab Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-29 11:35:27.481130",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Handover Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

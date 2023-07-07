@@ -1,0 +1,698 @@
+{
+ "_assign": "[\"admin@loranet.my\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-25 09:36:06.684473",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_details_tab",
+  "project_name",
+  "site_location",
+  "date",
+  "client",
+  "column_break_5buhb",
+  "name_in_charge",
+  "contractor",
+  "gateway_uid",
+  "total_nema_number",
+  "checklist_tab",
+  "amended_from",
+  "safety_helmet",
+  "safety_vest",
+  "2_flag_hazard_led_safety_baton",
+  "electrical_safety_glove",
+  "safety_boot",
+  "safety_cone",
+  "clamp_meter_multimeter_testpen",
+  "head_lamp_optional",
+  "tab_break_moovz",
+  "remarkshelmet",
+  "remarksvest",
+  "remarksflag",
+  "remarksglove",
+  "remarksboot",
+  "remarkscone",
+  "remarksclamp",
+  "remarksheadlamp",
+  "installation_process_tab",
+  "check_condition_of_feeder_pillar_section",
+  "check_ac_power_level_on_3_phase_wire_230_to_240v",
+  "timer_switch_functionalitymanual_auto_off",
+  "column_break_pinpt",
+  "remarksac",
+  "remarkstimer",
+  "gateway_installation_section",
+  "weather_seal_on_antenna",
+  "22m_grommet_at_hole",
+  "earthing_gateway_tap_to_pole",
+  "weather_seal_at_cat5e_cable_gland",
+  "poe_wrap_with_weather_seal",
+  "spd_earthing_wire_tap_to_pole",
+  "gateway_status_in_system",
+  "multicast_to_check_lantern_and_nema_status",
+  "column_break_uwujg",
+  "remarksweatherantenna",
+  "remarksgrommet",
+  "remarksearthing",
+  "remarkscat5e",
+  "remarkspoe",
+  "remarksspd",
+  "remarksgatewaystatus",
+  "remarksmulticast",
+  "mapping_tab",
+  "make_sure_get_streetlight_plan_from_contractor",
+  "check_nema_status_of_site_all_online",
+  "check_all_lantern_status_check_1_by_1",
+  "column_break_n5wnr",
+  "remarksstreetplan",
+  "remarksnemastatus",
+  "remarkslanternstatus",
+  "evidencepictures_tab",
+  "selfie_with_complete_safety_equipment",
+  "inside_feeder_pillar_with_timer_switch_and_mccb_circuit",
+  "feeder_pillar_number",
+  "gateway_front_view",
+  "gateway_left_and_right_view",
+  "gateway_cat5e_cable_gland_with_weather_seal",
+  "gateway_earthing_to_pole",
+  "gateway_cat5e_wire_inside_pole_with_grommet",
+  "mcb_and_spd_inside_pole",
+  "poe_wrap_with_weather_seal_pictures",
+  "cat5e_attached_to_poe",
+  "earthing_spd_to_pole",
+  "column_break_itfmu",
+  "picremarksselfie",
+  "picremarkstimer",
+  "picremarksfeedernum",
+  "picremarksgatewayfront",
+  "picremarksgatewayside",
+  "picremarksgatewaycat5e",
+  "picremarksgatewayearthing",
+  "picremarksgatewaygrommet",
+  "picremarksmcbnspd",
+  "picremarkspoe",
+  "picremarkspoecat5e",
+  "picremarkspdpole",
+  "column_break_wa4lp",
+  "picture_1",
+  "picture_2",
+  "picture_3",
+  "picture_4",
+  "picture_5",
+  "picture_6",
+  "picture_7",
+  "picture_8",
+  "picture_9",
+  "picture_10",
+  "picture_11",
+  "picture_12",
+  "details_tab",
+  "person_in_charge_site",
+  "employee_on_site"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "site_location",
+   "fieldtype": "Data",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_5buhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_in_charge",
+   "fieldtype": "Link",
+   "label": "Name In Charge",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "gateway_uid",
+   "fieldtype": "Data",
+   "label": "Gateway UID"
+  },
+  {
+   "fieldname": "total_nema_number",
+   "fieldtype": "Data",
+   "label": "Total Nema Number"
+  },
+  {
+   "fieldname": "checklist_tab",
+   "fieldtype": "Tab Break",
+   "label": "Safety Equipement"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site SOP Checklist",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "safety_helmet",
+   "fieldtype": "Select",
+   "label": "Safety Helmet",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "safety_vest",
+   "fieldtype": "Select",
+   "label": "Safety Vest",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "2_flag_hazard_led_safety_baton",
+   "fieldtype": "Select",
+   "label": "2 Flag Hazard/ LED safety baton",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "electrical_safety_glove",
+   "fieldtype": "Select",
+   "label": "Electrical Safety Glove",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "safety_boot",
+   "fieldtype": "Select",
+   "label": "Safety Boot",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "safety_cone",
+   "fieldtype": "Select",
+   "label": "Safety Cone",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "clamp_meter_multimeter_testpen",
+   "fieldtype": "Select",
+   "label": "Clamp meter/ Multimeter/ Testpen",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "head_lamp_optional",
+   "fieldtype": "Select",
+   "label": "Head Lamp (Optional)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "tab_break_moovz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarkshelmet",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksvest",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksflag",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksglove",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksboot",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarkscone",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksclamp",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksheadlamp",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "installation_process_tab",
+   "fieldtype": "Tab Break",
+   "label": "Installation Process"
+  },
+  {
+   "fieldname": "check_condition_of_feeder_pillar_section",
+   "fieldtype": "Section Break",
+   "label": "Check condition of Feeder Pillar"
+  },
+  {
+   "fieldname": "check_ac_power_level_on_3_phase_wire_230_to_240v",
+   "fieldtype": "Select",
+   "label": "Check AC Power Level on 3 Phase Wire (230 to 240v)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "timer_switch_functionalitymanual_auto_off",
+   "fieldtype": "Select",
+   "label": "Timer Switch Functionality(Manual, Auto, OFF)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_pinpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarksac",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarkstimer",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "gateway_installation_section",
+   "fieldtype": "Section Break",
+   "label": "Gateway Installation"
+  },
+  {
+   "fieldname": "weather_seal_on_antenna",
+   "fieldtype": "Select",
+   "label": "Weather seal on antenna",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "22m_grommet_at_hole",
+   "fieldtype": "Select",
+   "label": "22m Grommet at hole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "earthing_gateway_tap_to_pole",
+   "fieldtype": "Select",
+   "label": "EARTHING Gateway tap to pole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "weather_seal_at_cat5e_cable_gland",
+   "fieldtype": "Select",
+   "label": "Weather seal at cat5e cable gland",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "poe_wrap_with_weather_seal",
+   "fieldtype": "Select",
+   "label": "POE wrap with weather seal",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "spd_earthing_wire_tap_to_pole",
+   "fieldtype": "Select",
+   "label": "SPD earthing wire tap to pole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_status_in_system",
+   "fieldtype": "Select",
+   "label": "Gateway status in system",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "multicast_to_check_lantern_and_nema_status",
+   "fieldtype": "Select",
+   "label": "Multicast to check lantern and NEMA status",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_uwujg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarksweatherantenna",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksgrommet",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksearthing",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarkscat5e",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarkspoe",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksspd",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksgatewaystatus",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksmulticast",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "mapping_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mapping"
+  },
+  {
+   "fieldname": "make_sure_get_streetlight_plan_from_contractor",
+   "fieldtype": "Select",
+   "label": "Make sure get streetlight plan from contractor",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "check_nema_status_of_site_all_online",
+   "fieldtype": "Select",
+   "label": "Check NEMA status of site all online",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "check_all_lantern_status_check_1_by_1",
+   "fieldtype": "Select",
+   "label": "Check all lantern status (check 1 by 1)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_n5wnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarksstreetplan",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarksnemastatus",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarkslanternstatus",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "evidencepictures_tab",
+   "fieldtype": "Tab Break",
+   "label": "Evidence/Pictures"
+  },
+  {
+   "fieldname": "selfie_with_complete_safety_equipment",
+   "fieldtype": "Select",
+   "label": "Selfie with complete safety equipment",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "inside_feeder_pillar_with_timer_switch_and_mccb_circuit",
+   "fieldtype": "Select",
+   "label": "Inside feeder pillar with timer switch and MCCB circuit",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "feeder_pillar_number",
+   "fieldtype": "Select",
+   "label": "Feeder pillar number",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_front_view",
+   "fieldtype": "Select",
+   "label": "Gateway Front View",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_left_and_right_view",
+   "fieldtype": "Select",
+   "label": "Gateway Left and Right View",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_cat5e_cable_gland_with_weather_seal",
+   "fieldtype": "Select",
+   "label": "Gateway cat5e cable gland with weather seal",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_earthing_to_pole",
+   "fieldtype": "Select",
+   "label": "Gateway earthing to pole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "gateway_cat5e_wire_inside_pole_with_grommet",
+   "fieldtype": "Select",
+   "label": "Gateway cat5e wire inside pole with grommet",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "mcb_and_spd_inside_pole",
+   "fieldtype": "Select",
+   "label": "MCB and SPD inside pole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "poe_wrap_with_weather_seal_pictures",
+   "fieldtype": "Select",
+   "label": "POE wrap with weather seal pictures",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "cat5e_attached_to_poe",
+   "fieldtype": "Select",
+   "label": "Cat5e attached to POE",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "earthing_spd_to_pole",
+   "fieldtype": "Select",
+   "label": "Earthing SPD to pole",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_itfmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picremarksselfie",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarkstimer",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksfeedernum",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksgatewayfront",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksgatewayside",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksgatewaycat5e",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksgatewayearthing",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksgatewaygrommet",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarksmcbnspd",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarkspoe",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarkspoecat5e",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "picremarkspdpole",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_wa4lp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picture_1",
+   "fieldtype": "Attach Image",
+   "label": "Picture 1"
+  },
+  {
+   "fieldname": "picture_2",
+   "fieldtype": "Attach Image",
+   "label": "Picture 2"
+  },
+  {
+   "fieldname": "picture_3",
+   "fieldtype": "Attach Image",
+   "label": "Picture 3"
+  },
+  {
+   "fieldname": "picture_4",
+   "fieldtype": "Attach Image",
+   "label": "Picture 4"
+  },
+  {
+   "fieldname": "picture_5",
+   "fieldtype": "Attach Image",
+   "label": "Picture 5"
+  },
+  {
+   "fieldname": "picture_6",
+   "fieldtype": "Attach Image",
+   "label": "Picture 6"
+  },
+  {
+   "fieldname": "picture_7",
+   "fieldtype": "Attach Image",
+   "label": "Picture 7"
+  },
+  {
+   "fieldname": "picture_8",
+   "fieldtype": "Attach Image",
+   "label": "Picture 8"
+  },
+  {
+   "fieldname": "picture_9",
+   "fieldtype": "Attach Image",
+   "label": "Picture 9"
+  },
+  {
+   "fieldname": "picture_10",
+   "fieldtype": "Attach Image",
+   "label": "Picture 10"
+  },
+  {
+   "fieldname": "picture_11",
+   "fieldtype": "Attach Image",
+   "label": "Picture 11"
+  },
+  {
+   "fieldname": "picture_12",
+   "fieldtype": "Attach Image",
+   "label": "Picture 12"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "person_in_charge_site",
+   "fieldtype": "Link",
+   "label": "Person In Charge Site",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_on_site",
+   "fieldtype": "Link",
+   "label": "Employee On Site",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-19 15:26:53.472470",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Site SOP Checklist",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

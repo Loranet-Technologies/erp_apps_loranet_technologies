@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-03 15:31:54.851987",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nema_name",
+  "dev_ui",
+  "application_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "nema_name",
+   "fieldtype": "Link",
+   "label": "NEMA Name",
+   "options": "Device Streetlight Assets Loranet Technologies"
+  },
+  {
+   "fetch_from": "nema_name.device_eui",
+   "fieldname": "dev_ui",
+   "fieldtype": "Data",
+   "label": "Dev UI",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nema_name.application_id",
+   "fieldname": "application_key",
+   "fieldtype": "Data",
+   "label": "Application Key",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-03 15:33:44.559496",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Child Device Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

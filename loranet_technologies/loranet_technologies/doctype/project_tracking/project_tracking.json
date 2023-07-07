@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:po_number",
+ "creation": "2023-06-24 11:41:44.162161",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "po_number",
+  "project_name",
+  "organization",
+  "site_location",
+  "lattitude",
+  "longitude",
+  "feeder_pillar_qty",
+  "feeder_pillar_name",
+  "gateway_qty",
+  "gateway_name",
+  "nema_qty",
+  "nema_batch",
+  "supplier_name",
+  "supplier_contact",
+  "contractor_name",
+  "contractor_contact",
+  "installation_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "no_copy": 1,
+   "options": "PO-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PO Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "site_location",
+   "fieldtype": "Data",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "lattitude",
+   "fieldtype": "Float",
+   "label": "Lattitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "feeder_pillar_qty",
+   "fieldtype": "Int",
+   "label": "Feeder Pillar Qty"
+  },
+  {
+   "fieldname": "feeder_pillar_name",
+   "fieldtype": "Data",
+   "label": "Feeder Pillar Name"
+  },
+  {
+   "fieldname": "gateway_qty",
+   "fieldtype": "Int",
+   "label": "Gateway Qty"
+  },
+  {
+   "fieldname": "gateway_name",
+   "fieldtype": "Data",
+   "label": "Gateway Name"
+  },
+  {
+   "fieldname": "nema_qty",
+   "fieldtype": "Int",
+   "label": "NEMA Qty"
+  },
+  {
+   "fieldname": "nema_batch",
+   "fieldtype": "Data",
+   "label": "NEMA Batch"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "supplier_contact",
+   "fieldtype": "Data",
+   "label": "Supplier Contact"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "contractor_contact",
+   "fieldtype": "Data",
+   "label": "Contractor Contact"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "label": "Installation Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Tracking",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-24 12:30:56.487155",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Project Tracking",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "po_number",
+ "track_changes": 1
+}

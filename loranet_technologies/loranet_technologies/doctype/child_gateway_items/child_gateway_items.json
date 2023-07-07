@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-03 15:34:25.208771",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gateway_name",
+  "serial_no",
+  "broadband_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "gateway_name",
+   "fieldtype": "Link",
+   "label": "Gateway Name",
+   "options": "Gateway Loranet Technologies"
+  },
+  {
+   "fetch_from": "gateway_name.license",
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.gateway_id",
+   "fieldname": "broadband_id",
+   "fieldtype": "Data",
+   "label": "Broadband ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-03 15:35:37.722080",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Child Gateway Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

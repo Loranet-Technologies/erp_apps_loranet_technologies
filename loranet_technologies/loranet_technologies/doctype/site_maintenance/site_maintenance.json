@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MAINT-REPORT-.MM.-.YYYY.-.######",
+ "creation": "2023-06-19 12:26:28.765861",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_maintenance_report_section",
+  "location",
+  "longitude",
+  "latitude",
+  "column_break_w3e6e",
+  "contractor",
+  "date",
+  "details_of_report_section",
+  "table_details",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_maintenance_report_section",
+   "fieldtype": "Section Break",
+   "label": "SITE MAINTENANCE REPORT"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "column_break_w3e6e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "table_details",
+   "fieldtype": "Table",
+   "options": "Maintenance Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site Maintenance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details_of_report_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Report"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nNeed Action\nSolved"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-19 12:43:54.811839",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Site Maintenance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Cyan",
+   "title": "Pending"
+  },
+  {
+   "color": "Red",
+   "title": "Need Action"
+  },
+  {
+   "color": "Green",
+   "title": "Solved"
+  }
+ ],
+ "title_field": "location",
+ "track_changes": 1,
+ "track_views": 1
+}

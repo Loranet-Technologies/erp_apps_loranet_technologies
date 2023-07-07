@@ -1,0 +1,300 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 16:33:00.254341",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "asset_category",
+  "column_break_66gpk",
+  "contractor",
+  "location",
+  "status",
+  "amended_from",
+  "asset_details_section",
+  "license",
+  "date_created",
+  "supplier_id",
+  "supplier_name",
+  "column_break_wbkdc",
+  "organization_name",
+  "organization_id",
+  "everything_below_this_is_js_section",
+  "nema_section",
+  "device_id",
+  "device_eui",
+  "device_status",
+  "device_latitude",
+  "device_longitude",
+  "map_location",
+  "gateway_section",
+  "gateway_name",
+  "gateway_id",
+  "gateway_altitude",
+  "gateway_latitude",
+  "gateway_longitude",
+  "gateway_activation_date",
+  "gateway_description",
+  "traffic_light_section",
+  "traffic_light_name",
+  "creation_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ASS.-.###"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Asset Master",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Select",
+   "label": "Asset Category",
+   "options": "\nNEMA\nGateway\nTraffic Light\nFeeder"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "Contractors"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nPartially Depreciated\nFully Depreciated\nSold\nScrapped\nIn Maintenance\nOut of Order\nIssue\nReceipt\nCapitalized\nDecapitalized"
+  },
+  {
+   "fieldname": "column_break_66gpk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asset_details_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Details"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fetch_from": "organization_name.organization_id",
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Link",
+   "label": "Organization Name",
+   "options": "Organizations Loranet Technologies"
+  },
+  {
+   "fieldname": "column_break_wbkdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Link",
+   "label": "Supplier ID",
+   "options": "Supplier Loranet Technologies"
+  },
+  {
+   "fetch_from": "supplier_id.full_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "everything_below_this_is_js_section",
+   "fieldtype": "Section Break",
+   "label": "EVERYTHING BELOW THIS IS JS"
+  },
+  {
+   "depends_on": "eval:doc.asset_category==\"NEMA\"",
+   "fieldname": "nema_section",
+   "fieldtype": "Section Break",
+   "label": "NEMA"
+  },
+  {
+   "depends_on": "eval:doc.asset_category==\"NEMA\"",
+   "fieldname": "device_id",
+   "fieldtype": "Link",
+   "label": "Device ID",
+   "options": "Device Streetlight Assets Loranet Technologies"
+  },
+  {
+   "fetch_from": "device_id.device_eui",
+   "fieldname": "device_eui",
+   "fieldtype": "Data",
+   "label": "Device EUI",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "device_id.device_status",
+   "fieldname": "device_status",
+   "fieldtype": "Data",
+   "label": "Device Status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "device_id.latitude",
+   "fieldname": "device_latitude",
+   "fieldtype": "Data",
+   "label": "Device Latitude",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "device_id.longitude",
+   "fieldname": "device_longitude",
+   "fieldtype": "Data",
+   "label": "Device Longitude",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "device_id.map_location",
+   "fieldname": "map_location",
+   "fieldtype": "Data",
+   "label": "Map Location",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.asset_category==\"Gateway\"",
+   "fieldname": "gateway_section",
+   "fieldtype": "Section Break",
+   "label": "Gateway"
+  },
+  {
+   "depends_on": "eval:doc.asset_category==\"Gateway\"",
+   "fieldname": "gateway_name",
+   "fieldtype": "Link",
+   "label": "Gateway Name",
+   "options": "Gateway Loranet Technologies"
+  },
+  {
+   "fetch_from": "gateway_name.gateway_id",
+   "fieldname": "gateway_id",
+   "fieldtype": "Data",
+   "label": "Gateway ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.gateway_altitude",
+   "fieldname": "gateway_altitude",
+   "fieldtype": "Data",
+   "label": "Gateway Altitude",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.gateway_latitude",
+   "fieldname": "gateway_latitude",
+   "fieldtype": "Data",
+   "label": "Gateway Latitude",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.gateway_longitude",
+   "fieldname": "gateway_longitude",
+   "fieldtype": "Data",
+   "label": "Gateway Longitude",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.activation_date",
+   "fieldname": "gateway_activation_date",
+   "fieldtype": "Datetime",
+   "label": "Gateway Activation Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gateway_name.gateway_description",
+   "fieldname": "gateway_description",
+   "fieldtype": "Data",
+   "label": "Gateway Description",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.asset_category==\"Traffic Light\"",
+   "fieldname": "traffic_light_section",
+   "fieldtype": "Section Break",
+   "label": "Traffic Light"
+  },
+  {
+   "fieldname": "traffic_light_name",
+   "fieldtype": "Link",
+   "label": "Traffic Light Name",
+   "options": "Traffic Light Assets Loranet Technologies"
+  },
+  {
+   "fetch_from": "traffic_light_name.date_created",
+   "fieldname": "creation_date",
+   "fieldtype": "Datetime",
+   "label": "Creation Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-27 16:24:54.238235",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Asset Master",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

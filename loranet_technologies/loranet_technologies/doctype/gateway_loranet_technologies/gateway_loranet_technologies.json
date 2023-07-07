@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 11:48:28.705149",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "gateway_id",
+  "gateway_name",
+  "gateway_description",
+  "gateway_profile",
+  "gateway_altitude",
+  "gateway_latitude",
+  "gateway_longitude",
+  "flag_update",
+  "date_created",
+  "date_updated",
+  "install_date",
+  "activation_date",
+  "expired_date",
+  "user_create_id",
+  "license",
+  "status",
+  "organization_id",
+  "supplier_id",
+  "gateway_location",
+  "sim_card_number",
+  "service_provider",
+  "purpose"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "GW.-.###"
+  },
+  {
+   "fieldname": "gateway_id",
+   "fieldtype": "Data",
+   "label": "Gateway ID"
+  },
+  {
+   "fieldname": "gateway_name",
+   "fieldtype": "Data",
+   "label": "Gateway Name"
+  },
+  {
+   "fieldname": "gateway_description",
+   "fieldtype": "Data",
+   "label": "Gateway Description"
+  },
+  {
+   "fieldname": "gateway_profile",
+   "fieldtype": "Data",
+   "label": "Gateway Profile"
+  },
+  {
+   "fieldname": "gateway_altitude",
+   "fieldtype": "Data",
+   "label": "Gateway Altitude"
+  },
+  {
+   "fieldname": "gateway_latitude",
+   "fieldtype": "Data",
+   "label": "Gateway Latitude"
+  },
+  {
+   "fieldname": "gateway_longitude",
+   "fieldtype": "Data",
+   "label": "Gateway Longitude"
+  },
+  {
+   "fieldname": "flag_update",
+   "fieldtype": "Data",
+   "label": "Flag Update"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Datetime",
+   "label": "Date Updated"
+  },
+  {
+   "fieldname": "install_date",
+   "fieldtype": "Datetime",
+   "label": "Install Date"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Datetime",
+   "label": "Activation Date"
+  },
+  {
+   "fieldname": "expired_date",
+   "fieldtype": "Datetime",
+   "label": "Expired Date"
+  },
+  {
+   "fieldname": "user_create_id",
+   "fieldtype": "Data",
+   "label": "User Create ID"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Data",
+   "label": "Supplier ID"
+  },
+  {
+   "fieldname": "gateway_location",
+   "fieldtype": "Data",
+   "label": "Gateway Location"
+  },
+  {
+   "fieldname": "sim_card_number",
+   "fieldtype": "Data",
+   "label": "Sim Card Number"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Data",
+   "label": "Service Provider"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 11:53:57.089664",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Gateway Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "gateway_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

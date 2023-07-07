@@ -1,0 +1,297 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 13:01:38.937668",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "organization_id",
+  "vendor_id",
+  "state_id",
+  "district_id",
+  "state_code",
+  "district_code",
+  "type",
+  "serial_number",
+  "street_route",
+  "street_route_code",
+  "supplier",
+  "model",
+  "latitude",
+  "longitude",
+  "sim_id",
+  "sim_registration_date",
+  "sim_expiry_date",
+  "sim_line_name",
+  "location",
+  "description",
+  "message",
+  "status",
+  "python_script",
+  "energy",
+  "earth_leakage",
+  "earth_leakage_quantity",
+  "device_energy",
+  "device_monitor",
+  "io_input",
+  "pcb_version",
+  "max_phase",
+  "new_cycle",
+  "camera_detection",
+  "phase_count",
+  "date_created",
+  "commision_date",
+  "alarm_check",
+  "serial_view",
+  "reset_detection_start",
+  "reset_detection_end",
+  "license"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TL.-.###"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID"
+  },
+  {
+   "fieldname": "vendor_id",
+   "fieldtype": "Data",
+   "label": "Vendor ID"
+  },
+  {
+   "fieldname": "state_id",
+   "fieldtype": "Data",
+   "label": "State ID"
+  },
+  {
+   "fieldname": "district_id",
+   "fieldtype": "Data",
+   "label": "District ID"
+  },
+  {
+   "fieldname": "state_code",
+   "fieldtype": "Data",
+   "label": "State Code"
+  },
+  {
+   "fieldname": "district_code",
+   "fieldtype": "Data",
+   "label": "District Code"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "street_route",
+   "fieldtype": "Data",
+   "label": "Street Route"
+  },
+  {
+   "fieldname": "street_route_code",
+   "fieldtype": "Data",
+   "label": "Street Route Code"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "sim_id",
+   "fieldtype": "Data",
+   "label": "Sim ID"
+  },
+  {
+   "fieldname": "sim_registration_date",
+   "fieldtype": "Datetime",
+   "label": "Sim Registration Date"
+  },
+  {
+   "fieldname": "sim_expiry_date",
+   "fieldtype": "Datetime",
+   "label": "Sim Expiry Date"
+  },
+  {
+   "fieldname": "sim_line_name",
+   "fieldtype": "Data",
+   "label": "Sim Line Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "python_script",
+   "fieldtype": "Data",
+   "label": "Python Script"
+  },
+  {
+   "fieldname": "energy",
+   "fieldtype": "Data",
+   "label": "Energy"
+  },
+  {
+   "fieldname": "earth_leakage",
+   "fieldtype": "Data",
+   "label": "Earth Leakage"
+  },
+  {
+   "fieldname": "earth_leakage_quantity",
+   "fieldtype": "Data",
+   "label": "Earth Leakage Quantity"
+  },
+  {
+   "fieldname": "device_energy",
+   "fieldtype": "Data",
+   "label": "Device Energy"
+  },
+  {
+   "fieldname": "device_monitor",
+   "fieldtype": "Data",
+   "label": "Device Monitor"
+  },
+  {
+   "fieldname": "io_input",
+   "fieldtype": "Data",
+   "label": "IO Input"
+  },
+  {
+   "fieldname": "pcb_version",
+   "fieldtype": "Data",
+   "label": "PCB Version"
+  },
+  {
+   "fieldname": "max_phase",
+   "fieldtype": "Data",
+   "label": "Max Phase"
+  },
+  {
+   "fieldname": "new_cycle",
+   "fieldtype": "Data",
+   "label": "New Cycle"
+  },
+  {
+   "fieldname": "camera_detection",
+   "fieldtype": "Data",
+   "label": "Camera Detection"
+  },
+  {
+   "fieldname": "phase_count",
+   "fieldtype": "Data",
+   "label": "Phase Count"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "commision_date",
+   "fieldtype": "Date",
+   "label": "Commision Date"
+  },
+  {
+   "fieldname": "alarm_check",
+   "fieldtype": "Data",
+   "label": "Alarm Check"
+  },
+  {
+   "fieldname": "reset_detection_start",
+   "fieldtype": "Time",
+   "label": "Reset Detection Start"
+  },
+  {
+   "fieldname": "reset_detection_end",
+   "fieldtype": "Time",
+   "label": "Reset Detection End"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "serial_view",
+   "fieldtype": "Data",
+   "label": "Serial View"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-06 10:48:06.092627",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Traffic Light Assets Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,311 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-24 17:06:39.673071",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "deviceid",
+  "feederid",
+  "section",
+  "feeder_group",
+  "mcb",
+  "device_profile_id",
+  "application_id",
+  "group_id",
+  "device_name",
+  "device_status",
+  "device_description",
+  "status_power",
+  "dim_value",
+  "app_eui",
+  "device_eui",
+  "device_key",
+  "license",
+  "device_status_battery",
+  "device_status_margin",
+  "brand",
+  "model",
+  "map_location",
+  "latitude",
+  "longitude",
+  "install_date",
+  "activation_date",
+  "expired_date",
+  "lantern_model",
+  "lantern_power",
+  "lantern_manafacturer",
+  "lantern_install_date",
+  "lantern_running_time",
+  "comment",
+  "flag_update",
+  "date_created",
+  "date_updated",
+  "user_create_id",
+  "organization_id",
+  "light_type",
+  "supplier_id",
+  "commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "deviceid.-.###"
+  },
+  {
+   "fieldname": "deviceid",
+   "fieldtype": "Data",
+   "label": "Device ID"
+  },
+  {
+   "fieldname": "feederid",
+   "fieldtype": "Data",
+   "label": "Feeder ID"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  },
+  {
+   "fieldname": "feeder_group",
+   "fieldtype": "Data",
+   "label": "Feeder Group"
+  },
+  {
+   "fieldname": "mcb",
+   "fieldtype": "Data",
+   "label": "MCB"
+  },
+  {
+   "fieldname": "device_profile_id",
+   "fieldtype": "Data",
+   "label": "Device Profile ID"
+  },
+  {
+   "fieldname": "application_id",
+   "fieldtype": "Data",
+   "label": "Application ID"
+  },
+  {
+   "fieldname": "group_id",
+   "fieldtype": "Data",
+   "label": "Group ID"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "Device Name"
+  },
+  {
+   "fieldname": "device_status",
+   "fieldtype": "Data",
+   "label": "Device Status"
+  },
+  {
+   "fieldname": "device_description",
+   "fieldtype": "Data",
+   "label": "Device Description"
+  },
+  {
+   "fieldname": "status_power",
+   "fieldtype": "Data",
+   "label": "Status Power"
+  },
+  {
+   "fieldname": "dim_value",
+   "fieldtype": "Data",
+   "label": "Dim Value"
+  },
+  {
+   "fieldname": "app_eui",
+   "fieldtype": "Data",
+   "label": "App EUI"
+  },
+  {
+   "fieldname": "device_eui",
+   "fieldtype": "Data",
+   "label": "Device EUI"
+  },
+  {
+   "fieldname": "device_key",
+   "fieldtype": "Data",
+   "label": "Device Key"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "device_status_battery",
+   "fieldtype": "Data",
+   "label": "Device Status Battery"
+  },
+  {
+   "fieldname": "device_status_margin",
+   "fieldtype": "Data",
+   "label": "Device Status Margin"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Data",
+   "label": "Map Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "install_date",
+   "fieldtype": "Datetime",
+   "label": "Install Date"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Datetime",
+   "label": "Activation Date"
+  },
+  {
+   "fieldname": "expired_date",
+   "fieldtype": "Datetime",
+   "label": "Expired Date"
+  },
+  {
+   "fieldname": "lantern_model",
+   "fieldtype": "Data",
+   "label": "Lantern Model"
+  },
+  {
+   "fieldname": "lantern_power",
+   "fieldtype": "Data",
+   "label": "Lantern Power"
+  },
+  {
+   "fieldname": "lantern_manafacturer",
+   "fieldtype": "Data",
+   "label": "Lantern Manafacturer"
+  },
+  {
+   "fieldname": "lantern_install_date",
+   "fieldtype": "Datetime",
+   "label": "Lantern Install Date"
+  },
+  {
+   "fieldname": "lantern_running_time",
+   "fieldtype": "Data",
+   "label": "Lantern Running Time"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "fieldname": "flag_update",
+   "fieldtype": "Data",
+   "label": "Flag Update"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Datetime",
+   "label": "Date Updated"
+  },
+  {
+   "fieldname": "user_create_id",
+   "fieldtype": "Data",
+   "label": "User Create ID"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID"
+  },
+  {
+   "fieldname": "light_type",
+   "fieldtype": "Data",
+   "label": "Light Type"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Data",
+   "label": "Supplier ID"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Data",
+   "label": "Commission "
+  }
+ ],
+ "links": [
+  {
+   "group": "Maintenance",
+   "link_doctype": "Asset Maintenance",
+   "link_fieldname": "asset_name"
+  },
+  {
+   "group": "Repair",
+   "link_doctype": "Asset Repair",
+   "link_fieldname": "asset"
+  },
+  {
+   "group": "Value",
+   "link_doctype": "Asset Value Adjustment",
+   "link_fieldname": "asset"
+  }
+ ],
+ "modified": "2023-06-26 16:03:39.278946",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Device Streetlight Assets Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "device_name",
+ "track_changes": 1
+}

@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 11:19:22.109241",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "organization_id",
+  "organization_name",
+  "flag_update",
+  "date_created",
+  "date_updated",
+  "user_create_id",
+  "related_domain",
+  "state_id",
+  "app_type",
+  "dashboard",
+  "substation",
+  "channel_organization",
+  "map",
+  "webtitle",
+  "iframe_camera",
+  "domain_local"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ORG.-.###"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID"
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "flag_update",
+   "fieldtype": "Data",
+   "label": "Flag Update"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Datetime",
+   "label": "Date Updated"
+  },
+  {
+   "fieldname": "user_create_id",
+   "fieldtype": "Data",
+   "label": "User Create ID"
+  },
+  {
+   "fieldname": "related_domain",
+   "fieldtype": "Data",
+   "label": "Related Domain"
+  },
+  {
+   "fieldname": "state_id",
+   "fieldtype": "Data",
+   "label": "State ID"
+  },
+  {
+   "fieldname": "app_type",
+   "fieldtype": "Data",
+   "label": "App Type"
+  },
+  {
+   "fieldname": "dashboard",
+   "fieldtype": "Data",
+   "label": "Dashboard"
+  },
+  {
+   "fieldname": "substation",
+   "fieldtype": "Data",
+   "label": "Substation"
+  },
+  {
+   "fieldname": "channel_organization",
+   "fieldtype": "Data",
+   "label": "Channel Organization"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Data",
+   "label": "Map"
+  },
+  {
+   "fieldname": "webtitle",
+   "fieldtype": "Data",
+   "label": "Webtitle"
+  },
+  {
+   "fieldname": "iframe_camera",
+   "fieldtype": "Data",
+   "label": "iFrame Camera"
+  },
+  {
+   "fieldname": "domain_local",
+   "fieldtype": "Data",
+   "label": "Domain Local"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 12:38:37.276993",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Organizations Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "organization_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

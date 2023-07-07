@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-27 12:15:46.462583",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name_code",
+  "full_name",
+  "phone_number",
+  "date_created",
+  "vendor_type",
+  "control_topic",
+  "total_streetlight",
+  "total_trafficlight"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SUP.-.###"
+  },
+  {
+   "fieldname": "name_code",
+   "fieldtype": "Data",
+   "label": "Name (Code)"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "control_topic",
+   "fieldtype": "Data",
+   "label": "Control Topic"
+  },
+  {
+   "fieldname": "total_streetlight",
+   "fieldtype": "Int",
+   "label": "Total Streetlight",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "total_trafficlight",
+   "fieldtype": "Int",
+   "label": "Total Trafficlight",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "vendor_type",
+   "fieldtype": "Select",
+   "label": "Vendor Type",
+   "options": "\nTraffic\nStreetlight\nAi Camera"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 12:25:05.169107",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Supplier Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Traffic"
+  },
+  {
+   "color": "Yellow",
+   "title": "Streetlight"
+  },
+  {
+   "color": "Blue",
+   "title": "Ai Camera"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

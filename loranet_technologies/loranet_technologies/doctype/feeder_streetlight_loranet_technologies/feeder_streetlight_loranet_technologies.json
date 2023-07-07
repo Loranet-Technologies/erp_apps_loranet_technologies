@@ -1,0 +1,267 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 10:49:02.022398",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "street",
+  "route",
+  "feeder_name",
+  "state",
+  "area",
+  "status_power",
+  "postal_code",
+  "street_name",
+  "map_location",
+  "feeder_location",
+  "feeder_owner",
+  "feeder_latitude",
+  "feeder_longitude",
+  "feeder_voltage",
+  "feeder_wiring",
+  "feeder_suggestion",
+  "energy",
+  "earth_leakage",
+  "earth_leakage_quantity",
+  "device_energy",
+  "pcb_version",
+  "device_monitor",
+  "io_input",
+  "date_updated",
+  "date_created",
+  "organization_id",
+  "supplier_id",
+  "site_visit",
+  "time_offline",
+  "substations",
+  "license",
+  "manafacturer",
+  "installer",
+  "contractor",
+  "created_by",
+  "exception_on_off"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "feeder_name",
+   "fieldtype": "Data",
+   "label": "Feeder Name"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "status_power",
+   "fieldtype": "Data",
+   "label": "Status Power"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Data",
+   "label": "Map Location"
+  },
+  {
+   "fieldname": "feeder_location",
+   "fieldtype": "Data",
+   "label": "Feeder Location"
+  },
+  {
+   "fieldname": "feeder_owner",
+   "fieldtype": "Data",
+   "label": "Feeder Owner"
+  },
+  {
+   "fieldname": "feeder_latitude",
+   "fieldtype": "Float",
+   "label": "Feeder Latitude"
+  },
+  {
+   "fieldname": "feeder_longitude",
+   "fieldtype": "Float",
+   "label": "Feeder Longitude"
+  },
+  {
+   "fieldname": "feeder_voltage",
+   "fieldtype": "Data",
+   "label": "Feeder Voltage"
+  },
+  {
+   "fieldname": "feeder_wiring",
+   "fieldtype": "Data",
+   "label": "Feeder Wiring"
+  },
+  {
+   "fieldname": "feeder_suggestion",
+   "fieldtype": "Data",
+   "label": "Feeder Suggestion "
+  },
+  {
+   "fieldname": "energy",
+   "fieldtype": "Data",
+   "label": "Energy"
+  },
+  {
+   "fieldname": "earth_leakage",
+   "fieldtype": "Data",
+   "label": "Earth Leakage"
+  },
+  {
+   "fieldname": "device_energy",
+   "fieldtype": "Data",
+   "label": "Device Energy"
+  },
+  {
+   "fieldname": "pcb_version",
+   "fieldtype": "Data",
+   "label": "PCB Version"
+  },
+  {
+   "fieldname": "device_monitor",
+   "fieldtype": "Data",
+   "label": "Device Monitor"
+  },
+  {
+   "fieldname": "io_input",
+   "fieldtype": "Data",
+   "label": "IO Input"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Datetime",
+   "label": "Date Updated"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Data",
+   "label": "Supplier ID"
+  },
+  {
+   "fieldname": "site_visit",
+   "fieldtype": "Data",
+   "label": "Site Visit"
+  },
+  {
+   "fieldname": "time_offline",
+   "fieldtype": "Data",
+   "label": "Time Offline"
+  },
+  {
+   "fieldname": "substations",
+   "fieldtype": "Data",
+   "label": "Substations"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "manafacturer",
+   "fieldtype": "Data",
+   "label": "Manafacturer"
+  },
+  {
+   "fieldname": "installer",
+   "fieldtype": "Data",
+   "label": "Installer"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "exception_on_off",
+   "fieldtype": "Data",
+   "label": "Exception On Off"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID"
+  },
+  {
+   "fieldname": "earth_leakage_quantity",
+   "fieldtype": "Data",
+   "label": "Earth Leakage Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 11:03:55.163444",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Feeder Streetlight Loranet Technologies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "feeder_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

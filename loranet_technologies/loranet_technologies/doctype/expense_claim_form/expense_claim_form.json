@@ -1,0 +1,497 @@
+{
+ "actions": [],
+ "autoname": "format:CM-{###}",
+ "creation": "2023-04-10 12:38:06.055735",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "claim_overview",
+  "expense_title",
+  "employee",
+  "employee_name",
+  "designation",
+  "department",
+  "column_break_jdyev",
+  "month",
+  "address",
+  "vehicle_type",
+  "plate_no",
+  "purpose_trip",
+  "section_break_wbyc0",
+  "departure",
+  "arrival",
+  "section_break_1",
+  "table_mileage",
+  "meals",
+  "table_meal",
+  "column_other",
+  "toll",
+  "hotel",
+  "column_break9",
+  "parking",
+  "other",
+  "cod_section",
+  "order_id",
+  "tracking_number",
+  "cod_attach",
+  "column_cod",
+  "cod_price",
+  "payment_type",
+  "receipt",
+  "mimiscellaneous_section",
+  "expense",
+  "misc_price",
+  "column_break_r6eks",
+  "evidence_other",
+  "section_total",
+  "grand_total",
+  "expense_details_section",
+  "expense_approver",
+  "column_break_iglm2",
+  "claim_status",
+  "column_break_tw1ql",
+  "expense_payment",
+  "signature",
+  "submitted_by",
+  "submitted_by_name",
+  "column_submitted",
+  "verified_by",
+  "verified_by_name",
+  "verified_column",
+  "approved_by",
+  "approved_by_name",
+  "attachment",
+  "evidence",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "claim_overview",
+   "fieldtype": "Tab Break",
+   "label": "Form"
+  },
+  {
+   "fieldname": "expense_title",
+   "fieldtype": "Select",
+   "label": "Name",
+   "options": "\nOutstation Claim Form\nExpenses Claim Form\nCOD Form\nMiscellaneous Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "From Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jdyev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\" || doc.expense_title === \"COD Form\" || doc.expense_title === \"Miscellaneous Form\"",
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month/Year",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Home Address",
+   "mandatory_depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "options": "Address"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "label": "Type of Transport",
+   "mandatory_depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "options": "\nCar\nMotorcycle"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "plate_no",
+   "fieldtype": "Data",
+   "label": "Plate Number",
+   "mandatory_depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\""
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "purpose_trip",
+   "fieldtype": "Data",
+   "label": "Purpose of Trips",
+   "mandatory_depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\""
+  },
+  {
+   "fieldname": "section_break_wbyc0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "departure",
+   "fieldtype": "Datetime",
+   "label": "Departure"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "arrival",
+   "fieldtype": "Datetime",
+   "label": "Arrival"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Mileage Expenses"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "table_mileage",
+   "fieldtype": "Table",
+   "options": "Mileage Claim Detail"
+  },
+  {
+   "depends_on": "eval:doc.select=='Outside Klang Valley';",
+   "fieldname": "meals",
+   "fieldtype": "Section Break",
+   "label": "Meals Expenses"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\"",
+   "fieldname": "table_meal",
+   "fieldtype": "Table",
+   "options": "Food Claim Detail",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "column_other",
+   "fieldtype": "Section Break",
+   "label": "Other Expenses"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "toll",
+   "fieldtype": "Currency",
+   "label": "Toll (Please upload the receipt in evidence page)"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "hotel",
+   "fieldtype": "Currency",
+   "label": "Hotel (Please upload the receipt in evidence page)"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "parking",
+   "fieldtype": "Currency",
+   "label": "Parking (Please upload the receipt in evidence page)"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "other",
+   "fieldtype": "Currency",
+   "label": "Other (Please upload the receipt in evidence page)"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"COD Form\"",
+   "fieldname": "cod_section",
+   "fieldtype": "Section Break",
+   "label": "COD Information"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"COD Form\"",
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order ID (Please refer on the parcel)",
+   "mandatory_depends_on": "eval:doc.expense_title==\"COD Form\""
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"COD Form\"",
+   "fieldname": "tracking_number",
+   "fieldtype": "Data",
+   "label": "Tracking Number (Please refer on the parcel)",
+   "mandatory_depends_on": "eval:doc.expense_title==\"COD Form\""
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"COD Form\"",
+   "fieldname": "cod_attach",
+   "fieldtype": "Attach",
+   "label": "Parcel (Please upload the image of the received parcel)",
+   "mandatory_depends_on": "eval:doc.expense_title==\"COD Form\""
+  },
+  {
+   "fieldname": "column_cod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"COD Form\"",
+   "fieldname": "cod_price",
+   "fieldtype": "Currency",
+   "label": "Price (RM)",
+   "mandatory_depends_on": "eval:doc.expense_title==\"COD Form\""
+  },
+  {
+   "depends_on": "eval:doc.location==\"COD Form\"",
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Cash\nOnline Banking"
+  },
+  {
+   "depends_on": "eval:doc.location==\"COD Form\"",
+   "fieldname": "receipt",
+   "fieldtype": "Attach Image",
+   "label": "Receipt (Please upload the receipt if using online banking)"
+  },
+  {
+   "fieldname": "mimiscellaneous_section",
+   "fieldtype": "Section Break",
+   "label": "Miscellaneous Information"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Miscellaneous Form\"",
+   "fieldname": "expense",
+   "fieldtype": "Link",
+   "label": "Expense Type ",
+   "options": "Expense Claim Type"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Miscellaneous Form\"",
+   "fieldname": "misc_price",
+   "fieldtype": "Data",
+   "label": "Price (RM)",
+   "mandatory_depends_on": "eval:doc.location === \"Miscellaneous Form\""
+  },
+  {
+   "depends_on": "eval:doc.location==\"Miscellaneous Form\"",
+   "fieldname": "column_break_r6eks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Miscellaneous Form\"",
+   "fieldname": "evidence_other",
+   "fieldtype": "Attach",
+   "label": "Evidence (Please upload receipt if any)",
+   "mandatory_depends_on": "eval:doc.expense_title==\"Miscellaneous Form\""
+  },
+  {
+   "fieldname": "section_total",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expense_details_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Approval"
+  },
+  {
+   "fetch_from": "employee.expense_approver",
+   "fieldname": "expense_approver",
+   "fieldtype": "Data",
+   "label": "Expense Approver"
+  },
+  {
+   "fieldname": "column_break_iglm2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "claim_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Approver Status",
+   "options": "Draft\nApproved\nRejected"
+  },
+  {
+   "fieldname": "column_break_tw1ql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expense_payment",
+   "fieldtype": "Select",
+   "label": "Status Payment",
+   "options": "\nPaid\nPending"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\" || doc.expense_title === \"COD Form\" || doc.expense_title === \"Miscellaneous Form\"",
+   "fieldname": "submitted_by",
+   "fieldtype": "Signature",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\" || doc.expense_title === \"COD Form\" || doc.expense_title === \"Miscellaneous Form\"",
+   "fetch_from": "employee.employee_number",
+   "fieldname": "submitted_by_name",
+   "fieldtype": "Data",
+   "label": "Submitted By"
+  },
+  {
+   "fieldname": "column_submitted",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "verified_by",
+   "fieldtype": "Signature"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "verified_by_name",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verified_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "approved_by",
+   "fieldtype": "Signature"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "approved_by_name",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Tab Break",
+   "label": "Evidence"
+  },
+  {
+   "depends_on": "eval:doc.expense_title==\"Outstation Claim Form\" || doc.expense_title === \"Expenses Claim Form\"",
+   "fieldname": "evidence",
+   "fieldtype": "Attach",
+   "label": "Attachment (Please upload all attachments in one zip or in one PDF file)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense Claim Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-money",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-19 11:23:38.644992",
+ "modified_by": "Administrator",
+ "module": "Loranet Technologies",
+ "name": "Expense Claim Form",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee,employee_name",
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "expense_title",
+ "track_changes": 1
+}
