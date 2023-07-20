@@ -132,6 +132,7 @@
   {
    "fieldname": "device_eui",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Device EUI"
   },
   {
@@ -282,7 +283,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2023-06-26 16:03:39.278946",
+ "modified": "2023-07-10 09:39:32.622993",
  "modified_by": "Administrator",
  "module": "Loranet Technologies",
  "name": "Device Streetlight Assets Loranet Technologies",

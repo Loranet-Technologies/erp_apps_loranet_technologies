@@ -430,7 +430,7 @@
  "icon": "fa fa-money",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 11:23:38.644992",
+ "modified": "2023-07-13 10:42:59.108940",
  "modified_by": "Administrator",
  "module": "Loranet Technologies",
  "name": "Expense Claim Form",
@@ -482,6 +482,17 @@
    "read": 1,
    "report": 1,
    "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support Team",
    "share": 1,
    "write": 1
   }
