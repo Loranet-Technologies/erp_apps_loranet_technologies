@@ -11,15 +11,19 @@
  "idx": 0,
  "is_standard": 1,
  "message": "    <title>Task Assigned</title>\n    \n    <h2>Task Assigned</h2>\n    <br />\n    You have been assigned a new task.\n    <br />\n    <br />\n    Task Name: {{ doc.name }}\n    <br />\n    Task Description: {{ doc.description }}\n    <br />\n    <br />\n    Please login to your account to view the task.\n    <br />\n    <br />\n    Thank you\n    <br />\n",
- "modified": "2023-06-20 15:32:13.464469",
- "modified_by": "Administrator",
+ "modified": "2023-08-03 11:23:04.271775",
+ "modified_by": "azhamadmnistrator@gmail.com",
  "module": "Loranet Technologies",
  "name": "ToDo",
  "owner": "Administrator",
- "recipients": [],
+ "recipients": [
+  {
+   "receiver_by_document_field": "allocated_to"
+  }
+ ],
  "send_system_notification": 1,
  "send_to_all_assignees": 1,
  "sender": "Admin - ERPNext",
  "sender_email": "erp@loranet.my",
- "subject": "{{ doc.name }} "
+ "subject": "ToDo"
 }
